@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>登录</title>
+    </head>
+    <body>
+        {% if message %}
+        <p style="color: red;">{{message}}</p>
+        {% endif %}
+        <form action="/login" method="post">
+            <legend>Please log in:</legend>
+            <p><input name="username" placeholder="用户名" value="{{username}}"></p>
+            <p><input name="password" placeholder="密码" type="password"></p>
+            <p><button type="submit">Log In!</button></p>
+        </form>
+        <a href="./register"> <input type=button value="Sign Up!" > </a>
+    </body>
+</html>
